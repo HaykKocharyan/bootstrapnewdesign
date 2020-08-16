@@ -576,10 +576,25 @@ input[type=checkbox]:focus+.switch-text::before {
 .shadow{
 	box-shadow: 0 .4em .7em .2em black !important;
 }
-
-
-
-
+.modal-content{
+	background-color: var(--bg-color) !important;
+}
+.fz-small{
+	font-size: .8em;
+}
+.dark-input{
+	background-color: var(--bg-color);
+	border: 0;
+	border-bottom: 1px solid white;
+	border-radius: 0;
+}
+.dark-input:focus{
+	box-shadow: none;
+	background-color: var(--bg-color);
+	border: 0;
+	border-bottom: 1px solid #fbbb43;
+	border-radius: 0;
+}
 
 
 

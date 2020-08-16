@@ -4,3 +4,8 @@ $('.btn-category').click(function (event) {
 });
 
 
+$('.cart-button').click(function (event){
+	window.location.href = "cart.html";
+	event.stopPropagation();
+	event.preventDefault();
+})

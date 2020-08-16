@@ -22,7 +22,7 @@
     </form>
     <ul class="navbar-nav col-4 col-xl-3 offset-1 d-none d-lg-flex">
       <li class="nav-item col-5 my-auto">
-        <a class="nav-link login-link text-white font-weight-bold text-center" href="#">Log In</a>
+        <a class="nav-link login-link text-white font-weight-bold text-center" href="#" data-toggle="modal" data-target="#LoginModal">Log In</a>
       </li>
       <li class="nav-item">
         <a class="nav-link wishlist" href="#"><i class="far fa-heart"></i></a>
@@ -197,6 +197,41 @@
       <div class="col-auto ml-0 ml-lg-auto text-muted">Site design: Hayk Kocharyan, Reference: <a class="text-hover-page" href="https://gabestore.ru/" target="_blank">Gabe Store <small>ru</small></a></div>
     </div>
   </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control dark-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control dark-input" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-dark">Login</button>
+            <span> / </span>
+            <a href="#" class="fz-small text-page">forgot password?</a>
+            <div class="float-right mr-4 mt-1">
+              <a href="activity.html" class="fz-small text-page">my Activity</a>
+              <span> / </span>
+              <a href="account.html" class="fz-small text-page">my Account</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

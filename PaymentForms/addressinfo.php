@@ -331,6 +331,11 @@ $("#address-carousel").owlCarousel({
     }
   });
 $("#paymentform_addressinfo").click(function() {
-  PaymentFormAjax("next=total&"+GetCardInfo()+'&'+GetAddressInfo());
+  if (!$('#paymentform_addressinfo').parents('.carousel-item').is(':last-child')){
+      $('#carouselExampleIndicators').carousel('next');
+  }else {
+    PaymentFormAjax("next=total&"+GetCardInfo()+'&'+GetAddressInfo());
+  }
+  
 });
 </script>

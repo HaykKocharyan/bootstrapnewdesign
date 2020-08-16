@@ -53,7 +53,11 @@ function PaymentFormAjax(data) {
 
 $(document).ready(function(){
 	$("#paymentform_cardinfo").click(function() {
-    	PaymentFormAjax("next=addressinfo&"+GetCardInfo());
+        if (!$('#paymentform_cardinfo').parents('.carousel-item').is(':last-child')){
+            $('#carouselExampleIndicators').carousel('next');
+        }else {
+        	PaymentFormAjax("next=addressinfo&"+GetCardInfo());
+        }
 	});
 });
 

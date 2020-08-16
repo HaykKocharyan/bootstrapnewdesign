@@ -13,6 +13,10 @@ body {
   background-color: #141311;
 }
 
+img {
+	border-radius: .6em;
+	box-shadow: 0 .1em .2em .1em rgba(0, 0, 0, .4);
+}
 .nav-search {
   width: 100%;
   border-radius: 2em;
@@ -420,14 +424,16 @@ body {
   top: 0;
 }
 
-.text-gold, .btn-dark:hover {
+.text-gold, .btn-dark:hover{
   color: #fbbb43;
 }
 
 .bg-gold {
   background-color: #fbbb43;
 }
-
+.bg-dark{
+	background-color: var(--bg-color) !important;
+}
 .cart-item img {
   width: 20%;
   border-radius: .7em;
@@ -595,7 +601,22 @@ input[type=checkbox]:focus+.switch-text::before {
 	border-bottom: 1px solid #fbbb43;
 	border-radius: 0;
 }
-
+.owl-carousel{
+	width: 88%;
+	margin: 0 auto;
+}
+.owl-prev, .owl-next{
+	width: 5%;
+	position: absolute;
+	height: 100%;
+	top: 0;
+}
+.owl-prev{
+	left:-6%;
+}
+.owl-next{
+	right:-6%;
+}
 
 
 

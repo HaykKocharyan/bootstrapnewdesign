@@ -116,7 +116,7 @@ img {
   margin-top: 10em;
 }
 
-.cart-button {
+.cart-button, .checkout-button {
   border-radius: .7em;
   font-size: 1.2em;
   background-color: #fbbb43;
@@ -124,7 +124,7 @@ img {
   transition: .4s;
 }
 
-.cart-button:hover {
+.cart-button:hover, .checkout-button:hover {
   background-color: #fff3c2;
 }
 
@@ -423,7 +423,6 @@ img {
   position: relative;
   top: 0;
 }
-
 .text-gold, .btn-dark:hover{
   color: #fbbb43;
 }
@@ -593,6 +592,7 @@ input[type=checkbox]:focus+.switch-text::before {
 	border: 0;
 	border-bottom: 1px solid white;
 	border-radius: 0;
+	color: white !important;
 }
 .dark-input:focus{
 	box-shadow: none;

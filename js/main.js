@@ -9,6 +9,11 @@ $('.cart-button').click(function (event){
 	event.stopPropagation();
 	event.preventDefault();
 })
+$('.checkout-button').click(function (event){
+	window.location.href = "checkout.html";
+	event.stopPropagation();
+	event.preventDefault();
+})
 
 $(document).ready(function(){
 
